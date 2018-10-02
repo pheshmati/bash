@@ -12,7 +12,8 @@ if [[ $1 -eq num ]]
 do
                   echo "$NEW_UUID $MSG $1 times"
                   echo 'error log sending to server ....'
-
+      		  echo 1 | nc -u -w 1 192.168.146.139 8095
+	
 done
 fi
 
